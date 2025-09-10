@@ -1,0 +1,98 @@
+/* ฟอนต์ */
+body {
+  margin: 0;
+  font-family: 'Kanit', sans-serif;
+  background: #fdf7f2;
+  color: #3e2723;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8B5E3C;
+  padding: 15px 30px;
+}
+
+.navbar .logo {
+  font-weight: 600;
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.navbar .nav-links li a:hover,
+.navbar .nav-links li a.active {
+  color: #FFDAB9;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #C19A6B, #8B5E3C);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Playlist */
+.music-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.playlist {
+  margin-bottom: 20px;
+}
+
+.playlist button {
+  background: #8B5E3C;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.playlist button:hover {
+  background: #A97456;
+}
+
+/* Video Box Responsive */
+.video-box {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #3E2723;
+  color: #fff;
+  margin-top: 40px;
+}

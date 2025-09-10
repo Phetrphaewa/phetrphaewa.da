@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เพลงที่ฉันชอบ - Phetrphaewa</title>
+  <link rel="stylesheet" href="music.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1> เพลงที่ฉันชอบ </h1>
+      <p>เลือกเพลงแล้วฟังได้ตามใจคุณ</p>
+    </div>
+  </section>
+
+  <!-- YouTube Playlist Section -->
+  <section class="music-section">
+    <h2>Playlist</h2>
+
+    <!-- Playlist Buttons -->
+    <div class="playlist">
+      <button onclick="playVideo('cJasnKdXA_E')">เพลง 1</button>
+      <button onclick="playVideo('qyKVXta1vVY')">เพลง 2</button>
+      <button onclick="playVideo('fS1wLTOGu5A')">เพลง 3</button>
+    </div>
+
+    <!-- Video Player -->
+    <div class="video-box">
+      <iframe id="ytplayer" width="560" height="315"
+              src="https://www.youtube.com/embed/cJasnKdXA_E"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Phetrphaewa | Modern Brown Style</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function playVideo(videoId) {
+      const player = document.getElementById('ytplayer');
+      player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    }
+  </script>
+
+</body>
+</html>

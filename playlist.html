@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist - Phetrphaewa</title>
+  <link rel="stylesheet" href="playlist.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Phetrphaewa</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="playlist.html" class="active">Playlist</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1> เพลย์ลิสต์พิเศษ</h1>
+      <p>เลือกเพลงแล้วฟังได้ตามใจคุณ</p>
+    </div>
+  </section>
+
+  <!-- Playlist Section -->
+  <section class="music-section">
+    <h2>รายการเพลง</h2>
+
+    <div class="playlist">
+      <button onclick="playVideo('UEomrCUlYg0')">เพลง 1</button>
+      <button onclick="playVideo('GYpzzbVRrsk')">เพลง 2</button>
+      <button onclick="playVideo('VC062XZvxcY')">เพลง 3</button>
+      <button onclick="playVideo('Y9nSm9WaEdc')">เพลง 4</button>
+      <button onclick="playVideo('EEocnHtllJ8')">เพลง 5</button>
+    </div>
+
+    <!-- Video Player -->
+    <div class="video-box">
+      <iframe id="ytplayer" width="560" height="315"
+              src="https://www.youtube.com/embed/UEomrCUlYg0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Phetrphaewa | Modern Brown Style</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function playVideo(videoId) {
+      const player = document.getElementById('ytplayer');
+      player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+    }
+  </script>
+
+</body>
+</html>
